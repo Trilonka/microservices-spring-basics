@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+# application id
+spring:
+  application:
+    name: "api-gateway"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+# useless setting for server and services load target
+eureka:
+  client:
+    service-url:
+      defaultZone: "http://localhost:8081/eureka"
