@@ -4,12 +4,10 @@ server:
 # application id
 spring:
   application:
-    name: "eclient"
+    name: "eclient2"
 
-# service load target
+# useless setting for server and services load target
 eureka:
   client:
     service-url:
       defaultZone: "http://localhost:8081/eureka"
-  instance:
-    instance-id: ${spring.application.name}:${random.uuid}
